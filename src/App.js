@@ -25,26 +25,26 @@ function App() {
 export default App;
 
 
-// Button.js
-import React from 'react';
+// // Button.js
+// import React from 'react';
 
-function Button() {
-  return (
-    <button className="AboutUsButton"> {/* Updated class name*/}
-      {About-Us}
-    </button>
-  );
-}
+// function Button() {
+//   return (
+//     <button className="AboutUsButton"> {/* Updated class name*/}
+//       {About-Us}
+//     </button>
+//   );
+// }
 
-export default Button;
-
-
-.AboutUsbutton {
-  background-color: #351e0a;
-  color: #ffffff
-  border: none;
-  padding: ''
-  cursor: pointer;
+// export default Button;
 
 
-}
+// .AboutUsbutton {
+//   background-color: #351e0a;
+//   color: #ffffff
+//   border: none;
+//   padding: ''
+//   cursor: pointer;
+
+
+// }
