@@ -1,50 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Home from './Home.js';
+import History from './History.js';
+import Portfolio from './Portfolio.js';
+import Investmentstrategy from './Investmentstrategy.js'
 import './App.css';
 
 function App() {
+  const [activeOption, setActiveOption] = useState('home');
+
+  const showContent = (option) => {
+    setActiveOption(option);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div >
+      <header>
+        <button onClick={() => showContent('home')}>Home</button>
+        <button onClick={() => showContent('history')}>History</button>
+        <button onClick={() => showContent('investmentstrategy')}>Investment Strategy</button>
+        <button onClick={() => showContent('portfolio')}>Portfolio</button>
       </header>
+
+      {activeOption === 'home' && <Home />}
+      {activeOption === 'history' && <History />}
+      {activeOption === 'investmentstrategy' && <Investmentstrategy />}
+      {activeOption === 'portfolio' && <Portfolio />}
     </div>
   );
 }
 
 export default App;
-
-
-// // Button.js
-// import React from 'react';
-
-// function Button() {
-//   return (
-//     <button className="AboutUsButton"> {/* Updated class name*/}
-//       {About-Us}
-//     </button>
-//   );
-// }
-
-// export default Button;
-
-
-// .AboutUsbutton {
-//   background-color: #351e0a;
-//   color: #ffffff
-//   border: none;
-//   padding: ''
-//   cursor: pointer;
-
-
-// }
