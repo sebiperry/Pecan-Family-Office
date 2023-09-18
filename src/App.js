@@ -4,6 +4,7 @@ import History from './History.js';
 import Portfolio from './Portfolio.js';
 import Investmentstrategy from './Investmentstrategy.js'
 import './App.css';
+import logo from './perrylogo.png';
 
 function App() {
   const [activeOption, setActiveOption] = useState('home');
@@ -15,6 +16,7 @@ function App() {
   return (
     <div >
       <header>
+        <a>Patient, Creative Capital</a>
         <button onClick={() => showContent('home')}>Home</button>
         <button onClick={() => showContent('history')}>History</button>
         <button onClick={() => showContent('investmentstrategy')}>Investment Strategy</button>
@@ -25,6 +27,12 @@ function App() {
       {activeOption === 'history' && <History />}
       {activeOption === 'investmentstrategy' && <Investmentstrategy />}
       {activeOption === 'portfolio' && <Portfolio />}
+      <footer>
+        <div>
+          <img src={logo}/>
+        </div>
+        <a> perryrr@pecanfamilyoffice.com</a>
+      </footer>
     </div>
   );
 }
