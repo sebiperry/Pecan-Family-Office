@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Home from './Home.js';
 import History from './History.js';
 import Portfolio from './Portfolio.js';
-import Investmentstrategy from './Investmentstrategy.js'
+import Investmentstrategy from './Investmentstrategy.js';
 import './App.css';
 import logo from './perrylogo.png';
 
