@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'; //importing modules from rea
 import Historyimage1 from './Pittsburgh.jpg';
 import Historyimage2 from './BrooklynBridge.jpg';
 import Historyimage3 from './SanDiegoSkyline.jpg';
+import './Slideshow.css';
 
 function Slideshow() { //defining the functional component
   const [currentSlide, setCurrentSlide] = useState(0); 
@@ -22,7 +23,7 @@ function Slideshow() { //defining the functional component
 ];
 //Here I'm defining the array of slides I will be using in the slideshow
   
-  const intervalTime = 2000; // I'm setting the interval time to 2000 milliseconds/2 seconds
+  const intervalTime = 5000; // I'm setting the interval time to 2000 milliseconds/2 seconds
 
   useEffect(() => {
     const intervalId = setInterval(() => {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Slideshow from './Slideshow.js';
+import logo from './perrylogo.png';
 import './History.css';
 
 function History() {
