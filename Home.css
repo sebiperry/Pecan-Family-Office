@@ -1,0 +1,49 @@
+
+img{
+    width: 100%;
+    height: auto;
+}
+.home-container {
+    position: relative;
+  }
+  
+  
+  
+  .logo-image {
+    position: absolute;
+    height:23%;
+    width:12%;
+    padding-top: 115px;
+    padding-left:60px;
+    top: 0;
+    left: 0;
+  }
+
+.home-container{
+    position: relative;
+}
+
+.box-container {
+    
+    width: auto; 
+    height: auto; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    padding: 70px; 
+    text-align: left; 
+  }
+  
+  .box-container a {
+    text-decoration: none; 
+    color: #333; 
+    display: block; 
+    line-height: 1.5; 
+    font-family: montserrat;
+    font-size: 2.5vw;
+  }
+  
+  
+  
+  
+  
+  

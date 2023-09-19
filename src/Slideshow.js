@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react'; //importing modules from react
+import Historyimage1 from './Pittsburgh.jpg';
+import Historyimage2 from './BrooklynBridge.jpg';
+import Historyimage3 from './SanDiegoSkyline.jpg';
 
 function Slideshow() { //defining the functional component
   const [currentSlide, setCurrentSlide] = useState(0); 
@@ -6,15 +9,15 @@ function Slideshow() { //defining the functional component
   //this will keep track of the current slide on the slideshow, initializing it to 0, which will set the first slide to display initially
   const slides = [
     {
-        imageUrl: 'Pittsburgh.jpg'
+        imageUrl: Historyimage1
     },
 
     {
-        imageUrl: 'BrooklynBridge.jpg'
+        imageUrl: Historyimage2
     },
 
     {
-        imageUrl: 'SanDiegoSkyline.jpg'
+        imageUrl: Historyimage3
     },
 ];
 //Here I'm defining the array of slides I will be using in the slideshow
