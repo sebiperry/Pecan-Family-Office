@@ -1,9 +1,11 @@
 
-img{
-    width: 100%;
+
+.home-image{
+   width: 100%;
     height: auto;
     z-index: -1;
 }
+
 .home-container {
     position: relative;
 }
