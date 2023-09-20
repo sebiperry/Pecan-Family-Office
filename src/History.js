@@ -12,8 +12,13 @@ function History() {
             <Slideshow />
             </div>
      <div className="box-container">
-        <a>Personal Biography: 
-            Skilled public and private markets professional with 17+ years experience managing multi-billion dollar portfolios of leveraged loans and high yield bonds across both principal preservation and absolute return strategies and 7+ years additional experience running all facets of a single family office. Competencies have been developed in entrepreneurial settings including: 1) growing two different boutique asset management firms from zero to over $2BN+ in AUM, 2) co-founding a third specialty finance/asset management firm (and currently maintaining a board seat) and 3) founding a single family office. Student of existing and emerging private asset classes as well as the public markets. Eager to apply skill sets to new opportunities.
+      <a>History & A Peak Into The Future
+ 
+ Founded in 2015 by Robert “Rob” Perry, Pecan FO is the culmination of a strong two-generational commitment to work ethic and living within one’s means.  These fundamental building blocks have provided the opportunity and freedom for the past and present generation to 1) pursue higher levels of education, 2) save and actively invest those savings and 3) engage in entrepreneurial endeavors.
+  
+ Pecan’s roots stretch back to southwestern and central Pennsylvania where the foundational pieces for today’s platform were unwittingly laid.  Eventually, these roots branched out to New York City, where in the early 2000s, the ability to engage in entrepreneurial endeavors led to Rob’s meaningful participation in the development of two successive institutional asset management boutiques.  Today, Pecan is based in San Diego but the principles learned, nurtured and then codified since those New York City days form the basis for Pecan’s core approach to investing. For example, Pecan is a co-founder of Kilo Capital, a customer centric bullion bank and precious metal merchant with an asset management arm.
+  
+ Pecan intends for future generations to be instilled with the same fundamental building blocks that were the seedlings for the current platform and aspires to ensure a consistent yet dynamic approach to investing over long periods of time.  We welcome you to join us on this journey.
  </a>
     
         </div>

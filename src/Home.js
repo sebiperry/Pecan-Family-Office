@@ -10,7 +10,8 @@ function Home() {
         <img src={logo} alt="Logo" className="logo-image" />
       </div>
       <div className="box-container">
-        <a>Founded in 2015, Pecan Family Office is a capital provider strategically looking to generate alpha across the risk/reward spectrum and leverage existing skill sets into board-level or advisory/consulting roles as appropriate. </a>
+        <a>Pecan FO is a single-family office based in southern California tasked with building and maintaining a highly diversified portfolio targeting absolute returns while balancing both growth and income considerations.  Pecan prides itself on being a patient, long-term investor and has a demonstrated willingness to explore opportunities and provide capital to niche, non-correlated, mis-understood, and recently developed asset classes.  Special emphasis is placed on opportunities where Pecan’s existing skill sets combined with capital deployment can drive incremental returns.
+</a>
       </div>
     </div>
   );
