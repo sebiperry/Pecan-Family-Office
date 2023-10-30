@@ -1,13 +1,13 @@
 import React from 'react';
 import "./AboutUs.css"
-import homeimage from '../images/perryhomeimage.png';
+import aboutimg from '../images/aboutus.jpg';
 import logo from '../images/perrylogo.png';
 
 function AboutUs() {
   return (
     <div classname='about-container'>
       <div>
-        <img src={homeimage} alt="Home" className="home-image"/>
+        <img src={aboutimg} alt="abt" className="about-image"/>
         <img src={logo} alt="Logo" className="logo-image" />
       </div>
       <div className="box-containerA">
