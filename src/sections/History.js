@@ -14,7 +14,7 @@ function History() {
             <Slideshow />
             </div>
      <div className="box-containerH">
-      <h2>History & A Peak Into The Future</h2>
+      <h2>History & A Glimpse Of The Future</h2>
       <p>
         Founded in 2015 by Robert “Rob” Perry, Pecan FO is the culmination of a strong two-generational commitment to work ethic and living within one’s means.  These fundamental building blocks have provided the opportunity and freedom for the past and present generation to 1) pursue higher levels of education, 2) save and actively invest those savings and 3) engage in entrepreneurial endeavors.
       </p>
