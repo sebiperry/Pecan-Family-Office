@@ -18,7 +18,7 @@ header a {
   text-align: left; 
   padding-left: 25px;
   flex-grow: 1; 
-  font-family: "work-sans", sans-serif;
+  font-family: "Montserrat-Classic", sans-serif;
   font-weight: 300;
   font-style: normal;
     
@@ -32,7 +32,7 @@ button {
   padding: 5px 30px;
   cursor: pointer;
   margin: 10px;
-  font-family: "work-sans", sans-serif;
+  font-family: "Montserrat-Classic", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.75vw;
