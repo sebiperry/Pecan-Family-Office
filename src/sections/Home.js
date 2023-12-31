@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css'
-import homeimage from '../images/manhattan.jpg';
+import homeimage from '../images/Wall_Street.jpg';
 import logo from '../images/perrylogo.png';
 function Home() {
   return (
