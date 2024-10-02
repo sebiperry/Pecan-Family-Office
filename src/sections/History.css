@@ -1,52 +1,107 @@
 .box-containerH {
-    width: auto; 
-    height: auto; 
-    background-color: #f0f0f0; 
-    border: 1px solid #ccc; 
-    padding-left: 200px; 
-    padding-right: 200px; 
-    padding-bottom: 150px; 
-    text-align: left; 
+  width: auto; 
+  height: auto; 
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc; 
+  padding-left: 200px; 
+  padding-right: 200px; 
+  padding-bottom: 150px; 
+  text-align: left; 
 }
+
 .box-containerH h2 {
-    color: #333; 
-    display: block;  
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 45px;
-    text-align: left;
-    text-decoration: underline;
-    text-decoration-color:  rgba(58, 29, 0, .8);
-    text-underline-offset: 30px;
+  color: #333; 
+  display: block;  
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 45px;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: rgba(58, 29, 0, .8);
+  text-underline-offset: 30px;
 }
-  
+
 .box-containerH p {
-    line-height: 1.5;
-    color: #333; 
-    display: block; 
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 22px;
+  line-height: 1.5;
+  color: #333; 
+  display: block; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px;
 }
+
 .second-p-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%; /* Adjust this value to control the width of the text content */
+}
+
+.img-content {
+  flex: 1;
+  max-width: 50%; /* Adjust this value to control the width of the image */
+}
+
+.map-img {
+  height: 30vw;
+  padding-top: 40px;
+}
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+  .box-containerH {
+      padding-left: 50px; /* Reduce padding for smaller screens */
+      padding-right: 50px;
+      padding-bottom: 100px;
   }
-  
-  .text-content {
-    flex: 1;
-    max-width: 50%; /* Adjust this value to control the width of the text content */
+
+  .box-containerH h2 {
+      font-size: 35px; /* Adjust font size for smaller screens */
+      text-underline-offset: 20px; /* Reduce the underline offset */
   }
-  
-  .img-content {
-    flex: 1;
-    max-width: 50%; /* Adjust this value to control the width of the image */
+
+  .box-containerH p {
+      font-size: 20px; /* Slightly smaller font for paragraphs */
   }
-  
+
+  .second-p-box {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+  .text-content, .img-content {
+      max-width: 100%; /* Full width for both text and image */
+  }
+
   .map-img {
-   height:30vw;
-   padding-top:40px;
+      height: 50vw; /* Adjust height to make the map image more responsive */
   }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  .box-containerH {
+      padding-left: 20px; /* Further reduce padding for mobile */
+      padding-right: 20px;
+      padding-bottom: 80px;
+  }
+
+  .box-containerH h2 {
+      font-size: 28px; /* Further adjust font size for mobile */
+      text-underline-offset: 15px; /* Reduce underline offset further */
+  }
+
+  .box-containerH p {
+      font-size: 18px; /* Smaller font size for mobile */
+  }
+
+  .map-img {
+      height: 60vw; /* Adjust height for mobile screens */
+  }
+}
+
