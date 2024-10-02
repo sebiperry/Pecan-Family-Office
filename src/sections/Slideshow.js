@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Historyimage1 from '../images/PET.webp';
 import Historyimage2 from '../images/brooklynbridge.jpg';
-import Historyimage3 from '../images/bb.jpg';
+import Historyimage3 from '../images/SanDieg.jpg';
 import './Slideshow.css';
 
 function Slideshow() {

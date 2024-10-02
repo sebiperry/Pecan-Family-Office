@@ -1,10 +1,18 @@
 body {
   margin: 0;
+<<<<<<< Updated upstream
   font-family: "Montserrat", sans-serif;
+=======
+  font-family: "Montserrat" sans-serif;
+>>>>>>> Stashed changes
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
+<<<<<<< Updated upstream
   font-family: "Montserrat", sans-serif;
 }
+=======
+  font-family: "Montserrat" sans-serif;
+>>>>>>> Stashed changes
