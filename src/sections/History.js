@@ -21,8 +21,7 @@ function History() {
       <div className = 'second-p-box'>
         <div className='p-content'>
           <p>
-            Pecan’s roots stretch back to southwestern and central Pennsylvania where the foundational pieces for today’s platform were unwittingly laid.  Eventually, these roots branched out to New York City, where in the early 2000s, the ability to engage in entrepreneurial endeavors led to Rob’s meaningful participation in the development of two successive institutional asset management boutiques.  Today, Pecan is based in San Diego but the principles learned, nurtured and then codified since those New York City days form the basis for Pecan’s core approach to investing. For example, Pecan is a co-founder of Kilo Capital, a customer centric bullion bank and precious metal merchant with an asset management arm.
-          </p>
+            Pecan’s roots stretch back to southwestern and central Pennsylvania where the foundational pieces for today’s platform were unwittingly laid.  Eventually, these roots branched out to New York City, where in the early 2000s, the ability to engage in entrepreneurial endeavors led to Rob’s meaningful participation in the development of two successive institutional asset management boutiques.  Today, Pecan is based in San Diego but the principles learned, nurtured and then codified since those New York City days form the basis of Pecan’s core approach to investing. Case in point, Pecan co-founded Kilo Capital, a precious metals centric commodity inventory finance platform in 2017.
         </div>
         <div className = 'img-content'>
           <img src = {map} className = 'map-img'/>
