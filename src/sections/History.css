@@ -3,8 +3,8 @@
     height: auto; 
     background-color: #f0f0f0; 
     border: 1px solid #ccc; 
-    padding-left: 200px; 
-    padding-right: 200px; 
+    padding-left: 100px; 
+    padding-right: 100px; 
     padding-bottom: 150px; 
     text-align: left; 
 }
@@ -34,12 +34,12 @@
   }
   
   .text-content {
-    flex: 1;
-    max-width: 50%; /* Adjust this value to control the width of the text content */
+    flex: 50%;
+    max-width: 100%; /* Adjust this value to control the width of the text content */
   }
   
   .img-content {
-    flex: 1;
+    flex: 50%;
     max-width: 50%; /* Adjust this value to control the width of the image */
   }
   
@@ -52,4 +52,12 @@
     .box-containerH {
       padding: 0 20px;
     }
+
+    .flex-second-p-box, .flex-map-img {
+      flex: 100%;
+    }
+
+    
   }
+
+
