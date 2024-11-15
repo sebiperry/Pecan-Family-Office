@@ -40,21 +40,28 @@
   
   .img-content {
     flex: 50%;
-    max-width: 50%; /* Adjust this value to control the width of the image */
+    max-width: 100%; /* Adjust this value to control the width of the image */
   }
   
   .map-img {
-   height:30vw;
-   padding-top:40px;
+    height:40vw;
+    padding-top:40px;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1100px) {
     .box-containerH {
       padding: 0 20px;
     }
+   
+    .second-p-box {
+      flex-direction: column-reverse;
+    }
 
-    .flex-second-p-box, .flex-map-img {
-      flex: 100%;
+    .map-img{
+      width: 75vw;
+      align-content: center;
     }
 
     
