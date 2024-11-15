@@ -26,9 +26,10 @@
     height: auto; 
     background-color: #f0f0f0; 
     border: 1px solid #ccc; 
+    padding-top: 50px;
     padding-left: 100px; 
     padding-right: 100px; 
-    padding-bottom: 150px; 
+    padding-bottom: 50px;
     text-align: left; 
 }
 
