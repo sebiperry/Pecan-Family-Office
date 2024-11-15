@@ -17,10 +17,8 @@
     font-style: normal;
     font-size: 45px;
     text-align: left;
-    text-decoration: underline;
-    text-decoration-color:  rgba(58, 29, 0, .8);
-    text-underline-offset: 30px;
 }
+    
   
 .box-containerA p {
    line-height: 1.5;
@@ -44,3 +42,12 @@
      height: auto;
      z-index: -1;
  }
+
+ @media only screen and (max-width: 600px) {
+    .box-containerA{
+        padding: 20px;
+    }
+ }
+
+
+    
