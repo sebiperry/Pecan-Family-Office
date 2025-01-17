@@ -3,7 +3,7 @@ import Home from "./sections/Home.js";
 import History from "./sections/History.js";
 import AboutUs from "./sections/AboutUs.js";
 import "./App.css";
-import "./Overlay.css"; // Add the overlay animation styles here
+import "./Overlay.css";
 import logo from "./images/perrylogo.png";
 
 function App() {
@@ -11,12 +11,11 @@ function App() {
   const [isAnimationDone, setIsAnimationDone] = useState(false);
 
   useEffect(() => {
-    // Set a timer to end the animation after 2 seconds
     const timer = setTimeout(() => {
       setIsAnimationDone(true);
-    }, 2000); // 2 seconds duration
+    }, 6000); // Increased from 4000 to 6000ms (1.5x)
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
 
   const showContent = (option) => {
@@ -26,7 +25,14 @@ function App() {
 
   return (
     <div>
-      {!isAnimationDone && <div className="overlay" />} {/* Overlay animation */}
+      {!isAnimationDone && (
+        <div className="overlay">
+          <div className="overlay-content">
+            <img src={logo} alt="Logo" className="overlay-logo" />
+            <div className="overlay-tagline">Patient, Creative Capital</div>
+          </div>
+        </div>
+      )}
       <header>
         <a>Patient, Creative Capital</a>
         <button onClick={() => showContent("home")}>Home</button>
@@ -41,7 +47,7 @@ function App() {
         <div>
           <img src={logo} alt="Logo" />
         </div>
-        <a>perryrr@pecanfamilyoffice.com</a>
+        <a href="mailto:perryrr@pecanfamilyoffice.com">perryrr@pecanfamilyoffice.com</a>
       </footer>
     </div>
   );

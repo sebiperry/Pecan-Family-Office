@@ -1,19 +1,62 @@
-/* Full-screen overlay */
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(58,29,0,1); /* Solid brown color */
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58,29,0,1);
+  z-index: 9999;
+  opacity: 1;
+  animation: fadeOut 3.75s ease 2.25s forwards; /* Increased from 2.5s to 3.75s, delay from 1.5s to 2.25s */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.overlay-logo {
+  width: 200px;
+  height: auto;
+  opacity: 0;
+  animation: fadeInOut 6s ease forwards; /* Increased from 4s to 6s */
+}
+
+.overlay-tagline {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeInOut 4.5s ease 1.5s forwards; /* Increased from 3s to 4.5s, delay from 1s to 1.5s */
+  letter-spacing: 1px;
+}
+
+@keyframes fadeOut {
+  from {
     opacity: 1;
-    transition: opacity 1.5s ease; /* Smooth fade-out transition */
   }
-  
-  /* Add this class for when the animation is done */
-  .overlay.fade-out {
+  to {
     opacity: 0;
-    pointer-events: none; /* Allow interaction with the content below */
   }
-  
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
