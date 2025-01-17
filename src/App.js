@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimationDone(true);
-    }, 6000); // Increased from 4000 to 6000ms (1.5x)
+    }, 5000); // Increased to 8 seconds total duration
 
     return () => clearTimeout(timer);
   }, []);

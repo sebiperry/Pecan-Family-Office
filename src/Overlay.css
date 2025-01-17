@@ -7,7 +7,7 @@
   background-color: rgba(58,29,0,1);
   z-index: 9999;
   opacity: 1;
-  animation: fadeOut 5s ease 3s forwards; /* Increased from 2.5s to 3.75s, delay from 1.5s to 2.25s */
+  animation: fadeOut 1s ease 4s forwards; /* Fade out during the last second */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,16 +24,15 @@
   width: 200px;
   height: auto;
   opacity: 0;
-  animation: fadeInOut 5s ease forwards; /* Increased from 4s to 6s */
+  animation: fadeInOut 5s ease 1s forwards; /* Start at 1s, end at 5s */
 }
 
 .overlay-tagline {
   color: white;
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
   opacity: 0;
-  animation: fadeInOut 4.5s ease .5s forwards; /* Increased from 3s to 4.5s, delay from 1s to 1.5s */
+  animation: fadeInOut 5s ease 2s forwards; /* Start at 2s, end at 5s */
   letter-spacing: 1px;
 }
 
@@ -50,10 +49,10 @@
   0% {
     opacity: 0;
   }
-  20% {
+  15% {
     opacity: 1;
   }
-  80% {
+  75% {
     opacity: 1;
   }
   100% {
