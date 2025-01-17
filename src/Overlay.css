@@ -32,7 +32,7 @@
   font-size: 24px;
   font-weight: 500;
   opacity: 0;
-  animation: fadeInOut 5s ease 2s forwards; /* Start at 2s, end at 5s */
+  animation: fadeInOut 5s ease 2.5s forwards; /* Start at 2s, end at 5s */
   letter-spacing: 1px;
 }
 
