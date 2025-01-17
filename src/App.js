@@ -1,35 +1,47 @@
-import React, { useState } from 'react';
-import Home from './sections/Home.js';
-import History from './sections/History.js';
-import AboutUs from './sections/AboutUs.js';
-import './App.css';
-import logo from './images/perrylogo.png';
+import React, { useState, useEffect } from "react";
+import Home from "./sections/Home.js";
+import History from "./sections/History.js";
+import AboutUs from "./sections/AboutUs.js";
+import "./App.css";
+import "./Overlay.css"; // Add the overlay animation styles here
+import logo from "./images/perrylogo.png";
 
 function App() {
-  const [activeOption, setActiveOption] = useState('home');
+  const [activeOption, setActiveOption] = useState("home");
+  const [isAnimationDone, setIsAnimationDone] = useState(false);
+
+  useEffect(() => {
+    // Set a timer to end the animation after 2 seconds
+    const timer = setTimeout(() => {
+      setIsAnimationDone(true);
+    }, 2000); // 2 seconds duration
+
+    return () => clearTimeout(timer); // Cleanup the timer
+  }, []);
 
   const showContent = (option) => {
     setActiveOption(option);
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   };
 
   return (
-    <div >
+    <div>
+      {!isAnimationDone && <div className="overlay" />} {/* Overlay animation */}
       <header>
         <a>Patient, Creative Capital</a>
-        <button onClick={() => showContent('home')}>Home</button>
-        <button onClick={() => showContent('history')}>History</button>
-        <button onClick={() => showContent('aboutus')}>About Us</button>
+        <button onClick={() => showContent("home")}>Home</button>
+        <button onClick={() => showContent("history")}>History</button>
+        <button onClick={() => showContent("aboutus")}>About Us</button>
       </header>
 
-      {activeOption === 'home' && <Home />}
-      {activeOption === 'history' && <History />}
-      {activeOption === 'aboutus' && <AboutUs />}
+      {activeOption === "home" && <Home />}
+      {activeOption === "history" && <History />}
+      {activeOption === "aboutus" && <AboutUs />}
       <footer>
         <div>
-          <img src={logo}/>
+          <img src={logo} alt="Logo" />
         </div>
-        <a> perryrr@pecanfamilyoffice.com</a>
+        <a>perryrr@pecanfamilyoffice.com</a>
       </footer>
     </div>
   );
