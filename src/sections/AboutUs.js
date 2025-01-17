@@ -33,7 +33,7 @@ function AboutUs() {
           Private Equity – LLC member in an entity that provided common equity to purchase an industrial warehouse in St. Petersburg, FL
           </li>
           <li>
-          Venture Capital - Co-Founder, Board Member and Common Shareholder of Kilo Capital Corp
+          Venture Capital - Co-Founder, Board Member and Common Shareholder of <a href= "https://kilocapital.com/">Kilo Capital</a> Corp
           </li>
           <li>
           Uncorrelated – Individual owner of aging scotch whisky available for sale to industry labels or other investors
