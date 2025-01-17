@@ -21,7 +21,7 @@
 }
 
 .overlay-logo {
-  width: 200px;
+  width: 300px;
   height: auto;
   opacity: 0;
   animation: fadeInOut 5s ease 1s forwards; /* Start at 1s, end at 5s */
