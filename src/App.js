@@ -25,6 +25,7 @@ function App() {
 
   return (
     <div>
+<<<<<<< HEAD
       {!isAnimationDone && (
         <div className="overlay">
           <div className="overlay-content">
@@ -33,6 +34,11 @@ function App() {
           </div>
         </div>
       )}
+=======
+      {/* Overlay with fade-out effect */}
+      <div className={`overlay ${isAnimationDone ? "fade-out" : ""}`} />
+
+>>>>>>> bb3e74bfe843e882df45a1bcd047091f7ca30085
       <header>
         <a>Patient, Creative Capital</a>
         <button onClick={() => showContent("home")}>Home</button>
@@ -43,12 +49,16 @@ function App() {
       {activeOption === "home" && <Home />}
       {activeOption === "history" && <History />}
       {activeOption === "aboutus" && <AboutUs />}
+<<<<<<< HEAD
       <footer>
         <div>
           <img src={logo} alt="Logo" />
         </div>
         <a href="mailto:perryrr@pecanfamilyoffice.com">perryrr@pecanfamilyoffice.com</a>
       </footer>
+=======
+
+>>>>>>> bb3e74bfe843e882df45a1bcd047091f7ca30085
     </div>
   );
 }
