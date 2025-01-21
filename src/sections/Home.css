@@ -62,7 +62,7 @@ html {
       .logo-image {
           height: 15vw; /* Slightly larger for visibility */
           width: 15vw;
-          top: 8%; /* Adjust position for smaller screens */
+          top: 18%; /* Adjust position for smaller screens */
           left: 10%;
       }
   
@@ -84,7 +84,7 @@ html {
       .logo-image {
           height: 18vw; /* Further adjust size */
           width: 18vw;
-          top: 10%; /* Adjust relative position */
+          top: 20%; /* Adjust relative position */
           left: 10%;
       }
   
