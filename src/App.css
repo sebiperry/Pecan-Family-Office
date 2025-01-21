@@ -84,18 +84,14 @@ footer a{
 
 @media screen and (max-width: 480px) {
   header {
-    flex-direction: column;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center all content */
+    padding: 8px;
   }
   
-  header a {
-    font-size: 12px;
-    text-align: center;
-    padding: 5px 0;
-  }
-  
-  button {
-    font-size: 12px;
-    padding: 3px 8px;
+  header a, button {
+    margin: 5px; /* Equalize spacing */
+    font-size: 12px; /* Smaller font for space */
+    padding: 5px;
   }
 }
