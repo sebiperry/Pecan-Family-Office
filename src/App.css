@@ -84,14 +84,41 @@ footer a{
 
 @media screen and (max-width: 480px) {
   header {
-    flex-wrap: wrap;
-    justify-content: center; /* Center all content */
-    padding: 8px;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 10px;
   }
   
-  header a, button {
-    margin: 5px; /* Equalize spacing */
-    font-size: 12px; /* Smaller font for space */
-    padding: 5px;
+  header .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    background-color: rgba(58, 29, 0, 0.9); /* Match header color */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+  
+  header .nav-links a {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  header .menu-toggle {
+    display: block;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  header .nav-links.active {
+    display: flex; /* Show menu when active */
   }
 }
