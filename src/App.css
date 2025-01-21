@@ -66,3 +66,36 @@ footer a{
     padding: 5 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  header {
+    padding: 8px 15px;
+  }
+  
+  header a {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  
+  button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  header a {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  button {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}
