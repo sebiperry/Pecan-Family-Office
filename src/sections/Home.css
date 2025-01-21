@@ -84,7 +84,7 @@ html {
       .logo-image {
           height: 18vw; /* Further adjust size */
           width: 18vw;
-          top: 5%; /* Adjust relative position */
+          top: 10%; /* Adjust relative position */
           left: 10%;
       }
   
