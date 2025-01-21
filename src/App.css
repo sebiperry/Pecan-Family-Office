@@ -1,13 +1,15 @@
-html{
+/* General Styles */
+html {
   scroll-behavior: smooth;
 }
+
 header {
-  background-color: rgba(58, 29, 0, .8);
+  background-color: rgba(58, 29, 0, 0.8);
   color: #fff;
   padding: 10px 0;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -15,13 +17,12 @@ header {
 
 header a {
   font-size: 1.25vw;
-  text-align: left; 
+  text-align: left;
   padding-left: 25px;
-  flex-grow: 1; 
+  flex-grow: 1;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-style: normal;
-    
 }
 
 button {
@@ -36,7 +37,7 @@ button {
   font-weight: 400;
   font-style: normal;
   font-size: 1.75vw;
-  text-align: right; 
+  text-align: right;
 }
 
 button:hover {
@@ -44,38 +45,43 @@ button:hover {
   text-decoration-color: #2c4f40;
   text-underline-offset: 10px;
 }
-footer{
-  background-color: rgba(58, 29, 0, .8);
-  text-align:center;
+
+footer {
+  background-color: rgba(58, 29, 0, 0.8);
+  text-align: center;
   justify-content: center;
   padding-bottom: 1.5vw;
 }
-footer img{
+
+footer img {
   padding-top: 2vw;
   width: 7%;
   height: 7%;
 }
-footer a{
+
+footer a {
   color: #fff;
-  font-family: montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.75vw;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 800px) {
   .button {
-    padding: 5 20px;
+    padding: 5px 20px;
   }
 }
+
 @media screen and (max-width: 768px) {
   header {
-    padding: 8px 15px;
+    padding: 8px 20px; /* Added more horizontal padding */
   }
-  
+
   header a {
     font-size: 14px;
-    padding-left: 10px;
+    padding-left: 15px; /* Increased spacing from the left */
   }
-  
+
   button {
     font-size: 14px;
     padding: 5px 10px;
@@ -86,12 +92,18 @@ footer a{
   header {
     flex-wrap: wrap;
     justify-content: center; /* Center all content */
-    padding: 8px;
+    padding: 8px 20px; /* Added horizontal padding */
   }
-  
-  header a, button {
-    margin: 5px; /* Equalize spacing */
-    font-size: 12px; /* Smaller font for space */
+
+  header a {
+    margin: 0 10px; /* Added spacing between links */
+    font-size: 12px;
+    padding: 5px; /* Consistent padding for smaller screens */
+  }
+
+  button {
+    margin: 5px 10px; /* Added spacing for buttons */
+    font-size: 12px;
     padding: 5px;
   }
 }
