@@ -88,6 +88,13 @@ footer a{
     justify-content: space-between;
     padding: 10px;
   }
+
+  .logo-image {
+    height: 18vw; /* Further adjust size */
+    width: 18vw;
+    top: 12%; /* Adjust relative position */
+    left: 10%;
+}
   
   header .nav-links {
     display: none; /* Hide links by default */
