@@ -1,27 +1,36 @@
-html{
+/* Base styles */
+html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Header styles */
 header {
   background-color: rgba(58, 29, 0, .8);
   color: #fff;
-  padding: 10px 0;
+  padding: 15px 5%;
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
   position: fixed;
   width: 100%;
   z-index: 2;
+  transition: padding 0.3s ease;
 }
 
 header a {
-  font-size: 1.25vw;
+  font-size: clamp(14px, 1.25vw, 24px);
   text-align: left; 
-  padding-left: 25px;
+  padding-left: clamp(10px, 2vw, 25px);
   flex-grow: 1; 
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-style: normal;
-    
+  text-decoration: none;
+  transition: font-size 0.3s ease;
 }
 
 button {
@@ -29,14 +38,14 @@ button {
   color: #fff;
   border: none;
   outline: none;
-  padding: 5px 30px;
+  padding: clamp(5px, 1vw, 30px) clamp(10px, 2vw, 30px);
   cursor: pointer;
   margin: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 1.75vw;
-  text-align: right; 
+  font-size: clamp(16px, 1.75vw, 28px);
+  text-align: right;
+  transition: all 0.3s ease;
 }
 
 button:hover {
@@ -44,88 +53,117 @@ button:hover {
   text-decoration-color: #2c4f40;
   text-underline-offset: 10px;
 }
-footer{
+
+/* Footer styles */
+footer {
   background-color: rgba(58, 29, 0, .8);
-  text-align:center;
-  justify-content: center;
-  padding-bottom: 1.5vw;
-}
-footer img{
-  padding-top: 2vw;
-  width: 7%;
-  height: 7%;
-}
-footer a{
-  color: #fff;
-  font-family: montserrat;
-  font-size: 1.75vw;
+  text-align: center;
+  padding: clamp(20px, 3vw, 40px) 5%;
 }
 
-@media only screen and (max-width: 800px) {
-  .button {
-    padding: 5 20px;
-  }
+footer img {
+  width: clamp(50px, 7%, 120px);
+  height: auto;
+  margin-bottom: clamp(10px, 1.5vw, 20px);
 }
-@media screen and (max-width: 768px) {
+
+footer a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 1.75vw, 28px);
+  text-decoration: none;
+}
+
+/* Hamburger menu for mobile */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
   header {
-    padding: 8px 15px;
-  }
-  
-  header a {
-    font-size: 14px;
-    padding-left: 10px;
+    padding: 12px 4%;
   }
   
   button {
-    font-size: 14px;
-    padding: 5px 10px;
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 3%;
+  }
+  
+  header a {
+    padding-left: 15px;
+  }
+  
+  footer img {
+    width: clamp(40px, 10%, 80px);
   }
 }
 
 @media screen and (max-width: 480px) {
   header {
-    flex-direction: row; 
-    justify-content: space-between;
-    padding: 10px;
+    flex-wrap: wrap;
+    padding: 8px 15px;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    order: 3;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(58, 29, 0, 0.95);
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .logo-image {
-    height: 18vw; /* Further adjust size */
-    width: 18vw;
-    top: 10%; /* Adjust relative position */
-    left: 10%;
-}
-  
-  header .nav-links {
-    display: none; /* Hide links by default */
-    flex-direction: column;
-    background-color: rgba(58, 29, 0, 0.9); /* Match header color */
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    width: 200px;
-    border-radius: 5px;
-    z-index: 999;
+    height: 40px;
+    width: auto;
   }
-  
-  header .nav-links a {
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
+
+  button {
+    font-size: 16px;
+    padding: 8px 15px;
   }
-  
-  header .menu-toggle {
-    display: block;
-    font-size: 20px;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
+
+  footer {
+    padding: 20px 15px;
   }
-  
-  header .nav-links.active {
-    display: flex; /* Show menu when active */
+
+  footer img {
+    width: 60px;
+  }
+
+  footer a {
+    font-size: 16px;
   }
 }
