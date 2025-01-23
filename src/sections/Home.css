@@ -17,7 +17,7 @@ html {
       position: absolute;
       height: 12.5vw; /* Dynamic scaling */
       width: 12.5vw; /* Dynamic scaling */
-      top: 15%; /* Adjust relative to the container */
+      top: 14%; /* Adjust relative to the container */
       left: 5%; /* Adjust relative to the container */
       z-index: 1;
   }
