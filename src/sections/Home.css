@@ -1,108 +1,114 @@
-/* General Styles */
-html {
-    scroll-behavior: smooth;
-  }
-  
-  .home-container {
-      position: relative;
-  }
-  
-  .home-image {
-      width: 100%;
-      height: auto;
-      z-index: -1;
-  }
-  
-  .logo-image {
-      position: absolute;
-      height: 12.5vw; /* Dynamic scaling */
-      width: 12.5vw; /* Dynamic scaling */
-      top: 20%; /* Adjust relative to the container */
-      left: 5%; /* Adjust relative to the container */
-      z-index: 1;
-  }
-  
-  .box-container {
-      width: auto;
-      height: auto;
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
-      padding-top: 50px;
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-bottom: 50px;
-      text-align: left;
-  }
-  
-  .box-container h2 {
-      color: #333;
-      display: block;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      font-size: 45px;
-      text-align: left;
-      text-decoration: underline;
-      text-decoration-color: rgba(58, 29, 0, 0.8);
-      text-underline-offset: 30px;
-  }
-  
-  .box-container p {
-      line-height: 1.5;
-      color: #333;
-      display: block;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      font-size: 22px;
-  }
-  
-  /* Media Queries */
-  @media only screen and (max-width: 768px) {
-      .logo-image {
-          height: 15vw; /* Slightly larger for visibility */
-          width: 15vw;
-          top: 8%; /* Adjust position for smaller screens */
-          left: 10%;
-      }
-  
-      .box-container {
-          padding: 20px; /* Reduce padding for mobile */
-      }
-  
-      .box-container h2 {
-          font-size: 30px; /* Adjust heading size */
-          text-decoration: unset; /* Remove underline on small screens */
-      }
-  
-      .box-container p {
-          font-size: 18px; /* Reduce paragraph size */
-      }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .home-image{
+/* Global Styles */
+img {
+    width: 100%;
+    height: auto;
+}
+
+.home-container {
+    position: relative;
+}
+
+.home-image {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.logo-image {
+    position: absolute;
+    height: 23%;
+    width: 12%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.box-container {
+    width: auto;
+    height: auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 70px;
+    text-align: left;
+}
+
+.box-container h2 {
+    color: #333;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 45px;
+    text-align: left;
+}
+
+.box-container p {
+    line-height: 1.5;
+    color: #333;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.box-container a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5vw;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .logo-image {
+        height: 15%;
+        width: 10%;
+    }
+
+    .box-container {
+        padding: 40px;
+    }
+
+    .box-container h2 {
+        font-size: 30px;
+    }
+
+    .box-container p {
+        font-size: 18px;
+    }
+
+    .box-container a {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-image {
         width: 100%;
         height: auto;
-
     }
-      .logo-image {
-          height: 18vw; /* Further adjust size */
-          width: 18vw;
-          top: 12%; /* Adjust relative position */
-          left: 10%;
-      }
-  
-      .box-container {
-          padding: 15px;
-      }
-  
-      .box-container h2 {
-          font-size: clamp(16px, 2vw, 22px);
-      }
-  
-      .box-container p {
-          font-size: clamp(16px, 2vw, 22px);
-      }
-  }
-  
+
+    .logo-image {
+        height: 10%;
+        width: 8%;
+    }
+
+    .box-container {
+        padding: 20px;
+    }
+
+    .box-container h2 {
+        font-size: clamp(16px, 2vw, 22px);
+    }
+
+    .box-container p {
+        font-size: clamp(16px, 2vw, 22px);
+    }
+
+    .box-container a {
+        font-size: 4vw;
+    }
+}

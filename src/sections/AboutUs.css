@@ -21,20 +21,12 @@
     
   
 .box-containerA p {
-   line-height: 1.5;
-    color: #333; 
-    display: block; 
+    line-height: 1.5;
+    color: #333;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: /* Base styles */
-html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
+    font-size: 22px;
 }
 
 /* Header styles */
@@ -195,7 +187,7 @@ footer a {
     font-size: 16px;
   }
 };
-}
+
 .box-containerA li {
     line-height: 1.5;
     color: #333; 
