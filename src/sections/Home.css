@@ -67,7 +67,7 @@ img {
 @media screen and (max-width: 768px) {
     .logo-image {
         height: 15%;
-        width: 10%;
+        width: auto;
     }
 
     .box-container {
