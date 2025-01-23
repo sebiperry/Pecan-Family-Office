@@ -22,7 +22,7 @@ img {
     width: auto; 
     max-width: 150px;  
     max-height: 150px;  
-    z-index: 10;  
+    z-index: 0;  
 }
 
 .box-container {
