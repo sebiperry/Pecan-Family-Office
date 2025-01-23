@@ -18,8 +18,8 @@ img {
     position: absolute;
     height: 23%;
     width: 12%;
-    top: 0;
-    left: 0;
+    top: 100px;
+    left: 20px;
     z-index: 1;
 }
 
