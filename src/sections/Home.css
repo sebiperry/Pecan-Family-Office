@@ -16,11 +16,13 @@ img {
 
 .logo-image {
     position: absolute;
-    height: 23%;
-    width: 12%;
-    top: 100px;
-    left: 20px;
-    z-index: 1;
+    top: 12%;  
+    left: 4%;  
+    height: 18%;  
+    width: auto; 
+    max-width: 150px;  
+    max-height: 150px;  
+    z-index: 10;  
 }
 
 .box-container {
